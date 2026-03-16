@@ -1,7 +1,7 @@
 import { CheckoutErrorType, DEFAULT_USER_CHECKOUT_INFO } from "../../config/constants";
 import { test } from "../fixtures";
 
-test('Missing last name', async ({ inventoryPage, cartPage, checkoutPage }) => {
+test('Missing last name', { tag: '@regression' }, async ({ inventoryPage, cartPage, checkoutPage }) => {
     const PRODUCT_INDEX = 0;
     const USER_INFO = {
         firstName: DEFAULT_USER_CHECKOUT_INFO.firstName,

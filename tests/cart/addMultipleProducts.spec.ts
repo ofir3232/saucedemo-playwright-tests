@@ -1,6 +1,6 @@
 import { test } from "../fixtures";
 
-test('Add multiple product to cart', async ({ inventoryPage, cartPage }) => {
+test('Add multiple product to cart', { tag: '@regression' }, async ({ inventoryPage, cartPage }) => {
     const FISRT_PRODUCT_INDEX = 0;
     const SECOND_PRODUCT_INDEX = 1;
     const THIRD_PRODUCT_INDEX = 2;

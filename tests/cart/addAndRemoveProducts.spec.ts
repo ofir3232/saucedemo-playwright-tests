@@ -1,6 +1,6 @@
 import { test } from "../fixtures";
 
-test('Add and remove products', async ({ inventoryPage, cartPage }) => {
+test('Add and remove products', { tag: '@regression' }, async ({ inventoryPage, cartPage }) => {
     const FIRST_PRODUCT_INDEX = 0;
     const SECOND_PRODUCT_INDEX = 1;
     const PRODUCTS_AMOUNT_AFTER_REMOVING = 1;

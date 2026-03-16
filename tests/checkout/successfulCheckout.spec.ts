@@ -1,7 +1,7 @@
 import { DEFAULT_USER_CHECKOUT_INFO } from "../../config/constants";
 import { test } from "../fixtures";
 
-test('Successful checkout', async ({ inventoryPage, cartPage, checkoutPage }) => {
+test('Successful checkout', { tag: '@smoke' }, async ({ inventoryPage, cartPage, checkoutPage }) => {
     const PRODUCT_INDEX = 0;
 
     await test.step('Add product to cart', async () => {

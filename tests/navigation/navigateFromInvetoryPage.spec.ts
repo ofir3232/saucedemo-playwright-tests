@@ -1,6 +1,6 @@
 import { test } from "../fixtures";
 
-test('User can navigate back to inventory from product page', async ({ inventoryPage, productPage }) => {
+test('User can navigate back to inventory from product page', { tag: '@regression' }, async ({ inventoryPage, productPage }) => {
     const FIRST_PRODUCT_INDEX = 0;
 
     await test.step('Click on the first product', async () => {

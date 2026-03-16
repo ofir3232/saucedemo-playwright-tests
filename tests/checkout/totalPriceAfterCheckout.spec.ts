@@ -1,7 +1,7 @@
 import { DEFAULT_USER_CHECKOUT_INFO } from "../../config/constants";
 import { test } from "../fixtures";
 
-test('Validate total price afer checkout for multiple products', async ({ inventoryPage, cartPage, checkoutPage }) => {
+test('Validate total price afer checkout for multiple products', { tag: '@regression' }, async ({ inventoryPage, cartPage, checkoutPage }) => {
     const PRODUCTS = [0, 1];
 
     let totalPrice = 0;

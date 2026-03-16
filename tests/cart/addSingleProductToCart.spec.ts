@@ -1,6 +1,6 @@
 import { test } from "../fixtures";
 
-test('Add single product to cart', async ({ inventoryPage, cartPage }) => {
+test('Add single product to cart', { tag: '@smoke' }, async ({ inventoryPage, cartPage }) => {
     const PRODUCT_INDEX = 0;
     const PRODUCTS_AMOUNT = '1';
 

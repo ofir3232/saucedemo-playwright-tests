@@ -1,7 +1,7 @@
 import { DEFAULT_USER_CHECKOUT_INFO } from "../../config/constants";
 import { test } from "../fixtures";
 
-test('Navigate back and continue checkout', async ({ inventoryPage, cartPage, checkoutPage }) => {
+test('Navigate back and continue checkout', { tag: '@regression' }, async ({ inventoryPage, cartPage, checkoutPage }) => {
     const PRODUCT_INDEX = 0;
 
     await test.step('Add product to cart and open checkout', async () => {

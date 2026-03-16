@@ -1,6 +1,6 @@
 import { test } from "../fixtures";
 
-test('Reset app state clears cart', async ({ inventoryPage, navigationMenu }) => {
+test('Reset app state clears cart', { tag: '@regression' }, async ({ inventoryPage, navigationMenu }) => {
     const FIRST_PRODUCT_INDEX = 0;
     const EMPTY_CART = '';
 

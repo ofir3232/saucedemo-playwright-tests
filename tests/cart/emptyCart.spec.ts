@@ -1,6 +1,6 @@
 import { test } from "../fixtures";
 
-test('Validate cart is empty', async ({ cartPage }) => {
+test('Validate cart is empty', { tag: '@regression' }, async ({ cartPage }) => {
     await test.step('Open cart page', async () => {
         await cartPage.openCart();
     });

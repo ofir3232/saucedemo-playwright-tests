@@ -1,6 +1,6 @@
 import { test } from "../fixtures";
 
-test('Open product details from cart', async ({ inventoryPage, productPage, cartPage }) => {
+test('Open product details from cart', { tag: '@regression' }, async ({ inventoryPage, productPage, cartPage }) => {
     const PRODUCT_INDEX = 0;
 
     await test.step('Add product to cart', async () => {
