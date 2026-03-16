@@ -41,7 +41,7 @@ git -v
 
 ### 1. Clone the repository
 
-git clone https://github.com/<your-username>/<repository-name>.git
+git clone [https://github.com/<your-username>/<repository-name>.git](https://github.com/ofir3232/saucedemo-playwright-tests.git)
 
 Navigate into the project folder:
 
