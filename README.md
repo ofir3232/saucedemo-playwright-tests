@@ -150,6 +150,7 @@ project-root/
 ├── package-lock.json   
 ├── tsconfig.json           # TypeScript configuration
 ├── playwright.config.ts    # Playwright configuration
+├── .github                 # GitHub Actions workflow for running tests in CI
 └── README.md               # Project documentation
 
 ---
