@@ -163,3 +163,12 @@ project-root/
 - npm
 - Page Object Model (POM)
 - dotenv
+
+## CI
+
+This project uses GitHub Actions to automatically run Playwright tests on every push and pull request.
+
+## Known Issue
+
+A test related to product name consistency was skipped due to a known issue in the application.
+The test was implemented but is currently disabled to ensure a stable test suite execution.

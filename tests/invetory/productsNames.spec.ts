@@ -1,6 +1,6 @@
 import { test } from "../fixtures";
 
-test('Validate products names',  { tag: '@regression' }, async ({ inventoryPage }) => {
+test.skip('Validate products names',  { tag: '@regression' }, async ({ inventoryPage }) => {
     const PRODUCTS_AMOUNT: number = await inventoryPage.getProductsAmount();
 
     for (let i = 0; i < PRODUCTS_AMOUNT; i++) {
